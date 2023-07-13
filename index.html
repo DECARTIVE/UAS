@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan menggunakan bootstrap</title>
+   
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="bootstrap/css/gaya.css">
+</head>
+<body>
+ 
+ <div class="container">
+     <!--NAVBAR MULAI-->
+    <nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">toggle nav</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">KAMTUKUR</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">BERANDA <span class="sr-only"></span></a></li>
+                <li><a href="tentang.html">TENTANG</a></li>
+                <li><a href="pemesanan.html">PEMESANAN</a></li>
+            </ul>
+        </div>
+    </div>
+ </nav>
+     <!--NAVBAR END-->
+ <div class="row">
+    <div class="col-md-12">
+         <!--JUMBOTRON -->
+        <div class="jumbotron">
+            <h1>TOKO BANGUNAN KAMTUKUR</h1><br>Toko Bangunan Kamtukur menyediakan berbagai kebutuhan alat dan bahan bangunan yang dapat di pesan secara online maupun offline sehingga memudahkan anda dalam membeli kebutuhan yang diperlukan
+        </div>
+    </div>
+ </div>
+  <!-- JUMBOTRON END-->
+ <div class="row"><!--CAROUSEL-->
+    <div class="col-md-12">       
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="carousel slide" id="contoh-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#contoh-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#contoh-carousel" data-slide-to="1"></li>
+                        <li data-target="#contoh-carousel" data-slide-to="2"></li>
+                       
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                       
+                    <div class="item active">
+                        <img src="gambar/beko.jpeg" alt="slid1">
+                        <div class="carousel-caption">
+                            <h2 style="color: black;">Gerobak Pasir Artco</h2>
+                            <b style="color: black;">Gerobak Pasir Artco adalah geerobak sorong yang berkualitas dengan dengan dimensi 120*80 sehingga bisa membawa banyak muatan</b>
+                            <p>
+                            <a class="btn btn-danger btn-lg" role="button" href="pemesanan.html">PESAN SEKARANG</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="gambar/semen.jpeg" alt="slid2">
+                        <div class="carousel-caption">
+                            <h2 style="color: black;">SEMEN TIGA RODA</h2>
+                            <b style="color: black;">SEMEN TIGA RODA adalah semen bermutu yang telaah terjamin kualitasnya sehingga membuat rumah dan bangunan anda kokoh dan tahan lama</b>
+                            <p>
+                                <a class="btn btn-danger btn-lg" role="button" href="pemesanan.html">PESAN SEKARANG</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="gambar/ker1.jpeg" alt="slid3">
+                        <div class="carousel-caption">
+                            <h2 style="color: black;">KERAMIK CANTIK</h2>
+                            <b style="color: black;">KAMTUKUR menyediakan berbagai keramik cantik dengan motif yang bagus dan indah</b>
+                            <p>
+                                <a class="btn btn-danger btn-lg" role="button" href="pemesanan.html">PESAN SEKARANG</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    <a class="left carousel-control" href="#contoh-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">prev</span>
+                    </a>
+                    <a class="right carousel-control" href="#contoh-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">next</span>
+                    </a>                                                                 
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!--CAROSEL END-->
+         <div class="row"> <!--item1-->         
+        <div class="col-md-4">
+            <img src="gambar/pasir.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#model">
+             <h5>PASIR</h5>
+             <h6>Rp.20000/m³</h6>
+            <div class="modal fade" id="model" tabindex="0" role="dialog" aria-labelledby="modelLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="modelLabel">PASIR</h4>
+                        </div>
+                        <div class="modal-body"><p><ol>Kami menyediakan 3 jenis pasir yaitu
+                                                        <li>Pasir Halus cocok untuk memplester dengan harga Rp.20000/m³</li>
+                                                        <li>Pasir Kasar cocok untuk menimbun dengan harga Rp.15000/m³</li>
+                                                        <li>SIRTU cocok untuk membuat fondasi dengan harga Rp.35000/m³</li>
+                        </ol></p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                            <button id='modo' type="button" class="btn btn-danger" data-bs-dismiss="model">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="gambar/cangkul.jpeg" alt=""  data-toggle="modal" data-target="#mokel">
+            <h5>CANGKUL</h5>
+            <h6>Rp.88000</h6>
+            <div class="modal fade" id="mokel" tabindex="-1" role="dialog" aria-labelledby="mokelLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="mokelLabel">CANGKUL</h4>
+                        </div>
+                        <div class="modal-body"><p>Kami menjual cangkul secara lengkap maupun terpisah dengan kualitas terbaik serta daya tahan yang kuat</p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                            <button id='modo' type="button" class="btn btn-danger" data-bs-dismiss="mokel">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="gambar/sekop.jpeg" alt="" data-toggle="modal" data-target="#sekop">
+            <h5>SEKOP</h5>
+            <h6>Rp.85000</h6>
+            <div class="modal fade" id="sekop" tabindex="-1" role="dialog" aria-labelledby="sekopLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="sekopLabel">SEKOP</h4>
+                        </div>
+                        <div class="modal-body"><p><p>Kami menjual Sekop secara lengkap maupun terpisah dengan kualitas terbaik serta daya tahan yang kuat</p></p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                            <button id='sekop' type="button" class="btn btn-danger" data-bs-dismiss="sekop">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </div>
+    <br>
+    <div class="panel-default"><br></div><br>
+    <div class="row"> <!--ITEM2-->
+        <div class="col-md-4">
+            <img src="gambar/bata.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#bt">
+            <h5>Bata</h5>
+            <h6>Rp.500/batang</h6>
+            <div class="modal fade" id="bt" tabindex="0" role="dialog" aria-labelledby="btLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="btLabel">BATU BATA</h4>
+                        </div>
+                        <div class="modal-body"><p>Kami menjual batu bata berkualitas baik dengan harga murah</p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="gambar/batako.jpeg" alt=""  width="225" height="225"  data-toggle="modal" data-target="#btk">
+            <h5>BATAKO</h5>
+            <h6>Rp.2000/batang</h6>
+            <div class="modal fade" id="btk" tabindex="-1" role="dialog" aria-labelledby="btkLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="btkLabel">BATAKO</h4>
+                        </div>
+                        <div class="modal-body"><p>Kami menjual Batako berkulitas dengan harga murah</p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="gambar/semen.jpeg" alt="" data-toggle="modal" data-target="#tr">
+            <h5>SEMEN TIGA RODA</h5>
+            <h6>Rp.85000</h6>
+            <div class="modal fade" id="tr" tabindex="-1" role="dialog" aria-labelledby="trLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="trLabel">SEMEN</h4>
+                        </div>
+                        <div class="modal-body"><p>Semen Tiga Roda adalah semen andalan orang Indonesia yang telah terjamin kualitasnya </p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </div><br>
+         <div class="panel-default"><br></div><br>
+         <div class="row"> <!--ITEM3-->
+            <div class="col-md-4">
+                <img src="gambar/semenlain.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#sg">
+                <h5>SEMEN SG</h5>
+                <h6>Rp.60000</h6>
+                <div class="modal fade" id="sg" tabindex="0" role="dialog" aria-labelledby="sgLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="sgLabel">SEMEN SG</h4>
+                            </div>
+                            <div class="modal-body"><p>Semen SG semen murah berkualitas</p></div>
+                            <div class="modal-footer">
+                                <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="gambar/raskam.jpeg" alt=""  width="225" height="225"  data-toggle="modal" data-target="#rsk">
+                <h5>RASKAM</h5>
+                <h6>Rp.12000</h6>
+                <div class="modal fade" id="rsk" tabindex="-1" role="dialog" aria-labelledby="rskLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="rskLabel">RASKAM PLASTIK</h4>
+                            </div>
+                            <div class="modal-body"><p>Raskam kuat anti patah</p></div>
+                            <div class="modal-footer">
+                                <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="gambar/rasbi.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#rab">
+                <h5>RASKAM BESI</h5>
+                <h6>Rp.17000</h6>
+                <div class="modal fade" id="rab" tabindex="-1" role="dialog" aria-labelledby="rabLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="rabLabel">RASKAM BESI</h4>
+                            </div>
+                            <div class="modal-body">Raskam besi hakus terjamin</div>
+                            <div class="modal-footer">
+                                <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="panel-default"><br></div><br>
+         <div class="row"> <!--ITEM4-->
+            <div class="col-md-4">
+                <img src="gambar/kerikil.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#krk">
+                <h5>KERIKIL</h5>
+                <h6>Rp.120000/pangsir</h6>
+                <div class="modal fade" id="krk" tabindex="0" role="dialog" aria-labelledby="krkLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="krkLabel">KERIKIL</h4>
+                            </div>
+                            <div class="modal-body"><p>Kerikil dengan berbagai ukuran serta bersih dari sampah</p></div>
+                            <div class="modal-footer">
+                                <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="gambar/obeng.jpeg" alt=""  width="225" height="225"  data-toggle="modal" data-target="#obg">
+                <h5>OBENG</h5>
+                <h6>Rp.8000</h6>
+                <div class="modal fade" id="obg" tabindex="-1" role="dialog" aria-labelledby="obgLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="mokelLabel">OBENG</h4>
+                            </div>
+                            <div class="modal-body"><p>Obeng yang kami jual muarah dan berkulitas dengan berbagai ukuran</p></div>
+                            <div class="modal-footer">
+                                <button id='modo' type="button" class="btn btn-danger" data-bs-dismiss="mokel">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="gambar/obengbunga.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#obg">
+                <h5>OBENG</h5>
+                <h6>Rp.9000</h6>
+            </div>
+         </div> <div class="panel-default"><br></div><br>
+         <div class="row">  <!--item5-->
+          
+        <div class="col-md-4">
+            <img src="gambar/paku.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#paku">
+            <h5>PAKU</h5>
+            <h6>Rp.24000</h6>
+            <div class="modal fade" id="paku" tabindex="0" role="dialog" aria-labelledby="pakuLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="pakuLabel">PAKU</h4>
+                        </div>
+                        <div class="modal-body"><p>Kami menjual berbagai jenis dan ukuran paku dengan harga terjangkau</p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="gambar/meteran.jpeg" alt="" width="225" height="225"  data-toggle="modal" data-target="#mtr">
+            <h5>METERAN</h5>
+            <h6>Rp.26000</h6>
+            <div class="modal fade" id="mtr" tabindex="-1" role="dialog" aria-labelledby="mtrLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="mtrLabel">METERAN</h4>
+                        </div>
+                        <div class="modal-body"><p>Kami menjual berbagai jenis meteran dan ragam panjang</p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="gambar/belos.jpeg" alt="" data-toggle="modal" data-target="#belos">
+            <h5>BESI BETON</h5>
+            <h6>Rp.125000/BTG</h6>
+            <div class="modal fade" id="belos" tabindex="-1" role="dialog" aria-labelledby="belosLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="belosLabel">BESI BETON</h4>
+                        </div>
+                        <div class="modal-body"><p>Kami menjual berbagai besi beton dengan harga yang disesuaikan mengikuti ukurannya</p></div>
+                        <div class="modal-footer">
+                            <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </div> <div class="panel-default"><br></div><br>
+         <div class="row">  <!--item6-->
+          
+            <div class="col-md-4">
+                <img src="gambar/palu.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#palu">
+                <h5>PALU</h5>
+                <h6>Rp.30000/m²</h6>
+                <div class="modal fade" id="palu" tabindex="0" role="dialog" aria-labelledby="paluLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="paluLabel">PALU</h4>
+                            </div>
+                            <div class="modal-body"><p>Kami menjual pali berkualitas dengan harga terjangkau</p></div>
+                            <div class="modal-footer">
+                                <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="gambar/wc.jpeg" alt="" width="225" height="225"  data-toggle="modal" data-target="#wc">
+                <h5>WC</h5>
+                <h6>Rp.188000</h6>
+                <div class="modal fade" id="wc" tabindex="-1" role="dialog" aria-labelledby="wcLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="wcLabel">WC</h4>
+                            </div>
+                            <div class="modal-body"><p>Kami menjual berbagai merek wc baik yang jongkok maupun yang duduk </p></div>
+                            <div class="modal-footer">
+                                <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="gambar/belir.jpeg" alt="" width="225" height="225" data-toggle="modal" data-target="#belir">
+                <h5>BELIR</h5>
+                <h6>Rp.175000</h6>
+                <div class="modal fade" id="belir" tabindex="-1" role="dialog" aria-labelledby="belirLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="mokelLabel">BESI ULIR</h4>
+                            </div>
+                            <div class="modal-body"><p>Besi ulir yang kami jual telah terjamin kualitas nya serta telah disediakan berbagai ukuran yang dapat dipilih</p></div>
+                            <div class="modal-footer">
+                                <button id='modo' type="button" class="btn btn-info" ><a href="pemesanan.html">Pesan Sekarang</a></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </div> <div class="panel-default"><br></div><br>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="carousel slide" id="contoh" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#contoh" data-slide-to="0" class="active"></li>
+                                    <li data-target="#contoh" data-slide-to="1"></li>
+                                    <li data-target="#contoh" data-slide-to="2"></li>
+                                    <li data-target="#contoh" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                   
+                                <div class="item active">
+                                    <img src="gambar/ker1.jpeg" alt="slid1">
+                                    <div class="carousel-caption">
+                                        <h1 style="color: black;">KERAMIK #665</h1>
+                                        <b style="color: black;">Kami menyediakan berbagai macam motif keramik yang akan memperindah ruangan anda</b>
+                                        <p><a class="btn btn-danger btn-lg" role="button" href="pemesanan.html">PESAN SEKARANG</a>
+                                           
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="gambar/ker2.jpeg" alt="slid2">
+                                    <div class="carousel-caption">
+                                        <h1 style="color: black;">KERAMIK #305</h1>
+                                        <b style="color: black;">Kami menyediakan berbagai macam motif keramik yang akan memperindah ruangan anda</b>
+                                        <p><a class="btn btn-danger btn-lg" role="button" href="#">PESAN SEKARANG</a>
+                                           
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="gambar/ker3.jpeg" alt="slid3">
+                                    <div class="carousel-caption">
+                                        <h1 style="color: black;">KERAMIK #509</h1>
+                                        <b style="color: black;">Kami menyediakan berbagai macam motif keramik yang akan memperindah ruangan anda</b>
+                                        <p><a class="btn btn-danger btn-lg" role="button" href="pemesanan.html">PESAN SEKARANG</a>
+                                           
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="gambar/ker4.jpeg" alt="slid2">
+                                    <div class="carousel-caption">
+                                        <h1 style="color: black;">KERAMIK #005</h1>
+                                        <b style="color: black;">Kami menyediakan berbagai macam motif keramik yang akan memperindah ruangan anda</b>
+                                        <p><a class="btn btn-danger btn-lg" role="button" href="pemesanan.html">PESAN SEKARANG</a>
+                                           
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                                <a class="left carousel-control" href="#contoh" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">prev</span>
+                                </a>
+                                <a class="right carousel-control" href="#contoh" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">next</span>
+                                </a>                                                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+              
+            </div>
+            <div style="background-color: white;"><br><br></div>
+
+
+            <div class="panl">
+                <div class="row">
+                    <div class="col-md-3"><ul><h5>HUBUNGI KAMI</h5>
+                    <li><a href="https://wa.me/62838773334881?text=Barang ready Bang?">WhatsApp</a></li>
+                    </ul></div>
+                    
+                    <div class="col-md-9 col-md-offset-9">
+                        <ul><h5>ALAMAT</h5>
+                            <li>Jl.T.Amir HAMZAH No.12 <br>
+                            Kel.Pekan Tanjung Pura</li>
+                        </ul>
+                    </div>
+                  
+                </div>
+                
+            </div>
+     <script src="bootstrap/js/jQuery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
